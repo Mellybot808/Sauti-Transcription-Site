@@ -33,7 +33,7 @@ dialog.addEventListener("click", (event) => {
 activationForm.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!activationForm.reportValidity()) return;
-  formMessage.textContent = "Your details are ready, but this demo does not submit registration or verify M-Pesa payments. Do not treat the account as activated until payment is confirmed.";
+  formMessage.textContent = "Registration and payment verification aren't connected in this demo. Activation follows payment confirmation.";
   formMessage.classList.add("visible");
 });
 
