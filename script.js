@@ -33,7 +33,7 @@ dialog.addEventListener("click", (event) => {
 activationForm.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!activationForm.reportValidity()) return;
-  formMessage.textContent = "Registration and payment verification aren't connected in this demo. Activation follows payment confirmation.";
+  formMessage.textContent = "Online registration and payment verification are not yet available. Activation follows payment confirmation.";
   formMessage.classList.add("visible");
 });
 
